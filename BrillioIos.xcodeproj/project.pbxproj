@@ -11,6 +11,8 @@
 		47F379AF2BCF176D00FD4399 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F379AE2BCF176D00FD4399 /* ContentView.swift */; };
 		47F379B12BCF176F00FD4399 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47F379B02BCF176F00FD4399 /* Assets.xcassets */; };
 		47F379B42BCF176F00FD4399 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47F379B32BCF176F00FD4399 /* Preview Assets.xcassets */; };
+		47F379BC2BCF1BD400FD4399 /* BrillioIosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F379BB2BCF1BD400FD4399 /* BrillioIosModel.swift */; };
+		47F379C12BCF1E4800FD4399 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F379C02BCF1E4800FD4399 /* ApiClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		47F379AE2BCF176D00FD4399 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		47F379B02BCF176F00FD4399 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		47F379B32BCF176F00FD4399 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		47F379BB2BCF1BD400FD4399 /* BrillioIosModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrillioIosModel.swift; sourceTree = "<group>"; };
+		47F379C02BCF1E4800FD4399 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +55,9 @@
 		47F379AB2BCF176D00FD4399 /* BrillioIos */ = {
 			isa = PBXGroup;
 			children = (
-				47F379AC2BCF176D00FD4399 /* BrillioIosApp.swift */,
+				47F379BF2BCF1DE000FD4399 /* NetWork */,
+				47F379BE2BCF1DC300FD4399 /* Moduls */,
+				47F379BA2BCF1B9700FD4399 /* Model */,
 				47F379AE2BCF176D00FD4399 /* ContentView.swift */,
 				47F379B02BCF176F00FD4399 /* Assets.xcassets */,
 				47F379B22BCF176F00FD4399 /* Preview Content */,
@@ -65,6 +71,30 @@
 				47F379B32BCF176F00FD4399 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		47F379BA2BCF1B9700FD4399 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				47F379BB2BCF1BD400FD4399 /* BrillioIosModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		47F379BE2BCF1DC300FD4399 /* Moduls */ = {
+			isa = PBXGroup;
+			children = (
+				47F379AC2BCF176D00FD4399 /* BrillioIosApp.swift */,
+			);
+			path = Moduls;
+			sourceTree = "<group>";
+		};
+		47F379BF2BCF1DE000FD4399 /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				47F379C02BCF1E4800FD4399 /* ApiClient.swift */,
+			);
+			path = NetWork;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +167,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47F379BC2BCF1BD400FD4399 /* BrillioIosModel.swift in Sources */,
 				47F379AF2BCF176D00FD4399 /* ContentView.swift in Sources */,
 				47F379AD2BCF176D00FD4399 /* BrillioIosApp.swift in Sources */,
+				47F379C12BCF1E4800FD4399 /* ApiClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
