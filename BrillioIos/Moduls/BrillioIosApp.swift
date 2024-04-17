@@ -21,16 +21,28 @@ struct QuotesView: View {
                         .foregroundColor(.secondary)
                 }
                 .padding()
+                
+                Button(action: {
+                    
+                    viewModel.getDataQuotes()
+                    
+                }) {
+                    Image(systemName: "arrow.clockwise.circle.fill")
+                        .resizable()
+                            .frame(width: 50, height: 50)
+                }
+                
             } else if let error = viewModel.error {
                 Text("Error: \(error.localizedDescription)")
                     .foregroundColor(.red)
             } else {
                 ProgressView()
             }
+            
         }
         .onAppear {
             viewModel.getDataQuotes()
         }
-        .navigationTitle("Quote of the Day")
     }
 }
+

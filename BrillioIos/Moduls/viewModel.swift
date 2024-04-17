@@ -28,6 +28,8 @@ class QuotesViewModel: ObservableObject {
                 
             }
         }
-        
+        func refreshContent() {
+            getDataQuotes()
+        }
     }
 }
