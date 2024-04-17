@@ -14,7 +14,9 @@ import Foundation
 
 // MARK: - Titles
 struct Titles: Codable {
-    let id, content, author: String
+    let id: String
+    let content: String
+    var author: String
     let tags: [String]
     let authorSlug: String
     let length: Int

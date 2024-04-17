@@ -7,11 +7,30 @@
 
 import SwiftUI
 
-@main
-struct BrillioIosApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
+struct QuotesView: View {
+    @StateObject var viewModel = QuotesViewModel()
+    
+    var body: some View {
+        VStack {
+            if let quote = viewModel.quotesDetail {
+                VStack(alignment: .leading) {
+                    Text("Author: \(quote.author)")
+                        .font(.headline)
+                    Text("Content: \(quote.content)")
+                        .font(.subheadline)
+                        .foregroundColor(.secondary)
+                }
+                .padding()
+            } else if let error = viewModel.error {
+                Text("Error: \(error.localizedDescription)")
+                    .foregroundColor(.red)
+            } else {
+                ProgressView()
+            }
         }
+        .onAppear {
+            viewModel.getDataQuotes()
+        }
+        .navigationTitle("Quote of the Day")
     }
 }
